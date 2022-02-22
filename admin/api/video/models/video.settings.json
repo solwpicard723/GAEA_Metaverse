@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "name": "Video"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
